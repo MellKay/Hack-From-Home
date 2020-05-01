@@ -1,0 +1,26 @@
+{
+  "files": {
+    "app.js": "/static/js/app.aa46bea7.chunk.js",
+    "app.js.map": "/static/js/app.aa46bea7.chunk.js.map",
+    "runtime~app.js": "/static/js/runtime~app.44ddfa1e.js",
+    "runtime~app.js.map": "/static/js/runtime~app.44ddfa1e.js.map",
+    "static/js/2.d0a16169.chunk.js": "/static/js/2.d0a16169.chunk.js",
+    "static/js/2.d0a16169.chunk.js.map": "/static/js/2.d0a16169.chunk.js.map",
+    "favicon-16.png": "/favicon-16.png",
+    "favicon-32.png": "/favicon-32.png",
+    "favicon.ico": "/favicon.ico",
+    "index.html": "/index.html",
+    "manifest.json": "/manifest.json",
+    "serve.json": "/serve.json",
+    "static/media/ani-default.svg": "/static/media/ani-default.aa7f7bb0.svg",
+    "static/media/happy.png": "/static/media/happy.316c53f0.png",
+    "static/media/healthy.png": "/static/media/healthy.b151edec.png",
+    "static/media/hungry.png": "/static/media/hungry.427695fc.png",
+    "static/media/newlogo.png": "/static/media/newlogo.d96cdeb1.png"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.44ddfa1e.js",
+    "static/js/2.d0a16169.chunk.js",
+    "static/js/app.aa46bea7.chunk.js"
+  ]
+}
