@@ -14,26 +14,13 @@ Importantly there's no penalisation for not doing those tasks as we felt this wo
 
 If the user hasn't interacted for some time Ani sends a push notification to gently ask if they're okay? We'd also like to include something whereby if the user is not positively engaging to suggest ways they can reach out and get help (e.g. call a friend or family member, or any other form of support including mental health services).
 
-## Build Status
-
-Laying the foundations, come back later for updates!
-
 ## Tech Used
 
 React Native
-Databasey stuff to store user info securely - Confirm with Yasmin
 
 ## Installation
 
-Watch this space too...
-
-## Updates
-
-Space here for update info. For great justice.
-
-## Testing
-
-And this one...
+Git clone the repo and npm i to install dependencies. Npm start to run the App. 
 
 ## Built by
 
@@ -46,16 +33,3 @@ Mell Russon
 
 As part of the Code First Girls Hack from Home 2020
 
-TO DO:
-
-functionality
-
-1. if 'yes' is clicked on enjoy question, direct to the 'play' button for the avatar, then add 1 to the happiness
-2. if 'yes' is clicked on the health question (CHANGE THIS TO HAVE WE WASHED), direct to the clean button for the avatar, then add 1 to health
-3. if 'yes' is clicked on the eaten question, direct to the 'feed' button for the avatar, then add 1 to hunger
-4. add a question 'did we get any sleep last night?', if responded 'yes' direct to the sleep button for the avatar and add 1 to the health bar
-
-- create a question for 'did we sleep last night?' with yes and no functionality
-- change the doc/med question to 'have we washed today?' so it links in with the clean button better
-
-include push notification as the question itself: click yes or no. If they click yes, add a point, if they click no, make suggestions.
