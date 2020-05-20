@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
-/* import CSS from "./progressbar.module.css" */
 // percentage needs to be used onClick
 // filler function that sets the css to the percentage
 // ^ take in setPercentage
@@ -17,7 +16,7 @@ function ProgressBar({ hungerPercentage, happyPercentage, healthPercentage }) {
             width: `${healthPercentage}%`,
             backgroundColor: "#97e5d3",
             height: 20,
-            borderRadius: "inherit",
+            borderRadius: 50,
             marginTop: -1,
           }}
         />
@@ -29,7 +28,7 @@ function ProgressBar({ hungerPercentage, happyPercentage, healthPercentage }) {
             width: `${hungerPercentage}%`,
             backgroundColor: "#c89dff",
             height: 20,
-            borderRadius: "inherit",
+            borderRadius: 50,
             marginTop: -1,
           }}
         />
@@ -41,7 +40,7 @@ function ProgressBar({ hungerPercentage, happyPercentage, healthPercentage }) {
             width: `${happyPercentage}%`,
             backgroundColor: "#fee45c",
             height: 20,
-            borderRadius: "inherit",
+            borderRadius: 50,
             marginTop: -1,
           }}
         />
@@ -53,7 +52,7 @@ function ProgressBar({ hungerPercentage, happyPercentage, healthPercentage }) {
 const styles = StyleSheet.create({
   progressbar: {
     height: 20,
-    width: "80vw",
+    width: 300,
     borderRadius: 50,
     borderWidth: 1,
     borderColor: "#333",

@@ -20,7 +20,21 @@ function NavBar() {
         alt="menu"
         style={styles.burgerMenu}
       />
-      <Text className="title" style={styles.title}>
+      <Text
+        className="title"
+        style={{
+          fontFamily: "Roboto",
+          position: "absolute",
+          textAlign: "center",
+          width: 156,
+          height: 33,
+          left: 50,
+          top: 30,
+          fontSize: 22,
+          lineHeight: 39,
+          color: "rgba(22, 48, 43, 0.81)",
+        }}
+      >
         AniMate
       </Text>
     </View>
@@ -30,14 +44,14 @@ function NavBar() {
 const styles = StyleSheet.create({
   navBar: {
     backgroundColor: "#f8f8ff",
-    width: "100vw",
-    height: "auto",
+    width: "100%",
+    height: 100,
   },
   logo: {
     marginLeft: -10,
     width: 100,
     height: 100,
-    display: "inline-block",
+    // display: "inline-block",
   },
   burgerMenu: {
     width: 40,
@@ -46,20 +60,7 @@ const styles = StyleSheet.create({
     right: 10,
     top: 20,
   },
-  title: {
-    position: "absolute",
-    textAlign: "center",
-    width: 156,
-    height: 33,
-    left: 50,
-    top: 30,
-    fontFamily: "Baloo Paaji",
-    fontSize: 22,
-    lineHeight: 39,
-    letterSpacing: "0.1em",
-    color: "rgba(22, 48, 43, 0.81)",
-    textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
-  },
+  title: {},
 });
 
 export default NavBar;

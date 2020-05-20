@@ -5,7 +5,7 @@ import happy from "./assets/happy.png";
 import healthy from "./assets/healthy.png";
 import hungry from "./assets/hungry.png";
 // import "./app.css";
-import NavBar from "./components/NavBar";
+import NavBar from "./Components/NavBar/index";
 import {
   StyleSheet,
   Text,
@@ -16,7 +16,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import InfoIcon from "./Components/Info";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [hungerPercentage, setHungerPercentage] = useState(0);
@@ -71,7 +71,6 @@ function App() {
   return (
     <View>
       <NavBar />
-      <br></br>
 
       <View style={styles.container}>
         <ProgressBar
@@ -119,6 +118,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
+    marginTop: 20,
   },
   buttons: {
     flex: 1,
@@ -127,18 +127,9 @@ const styles = StyleSheet.create({
     marginLeft: 10,
     zIndex: 10,
   },
-  button: {
-    backgroundColor: "#afeeee",
-    borderRadius: 5,
-    padding: 5,
-    marginBottom: 5,
-    width: 90,
-    textAlign: "center",
-  },
+
   text: {
     fontSize: 30,
-
-    fontfamily: "Roboto",
   },
   avatar: {
     height: 100,
@@ -153,7 +144,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "column",
     justifyContent: "flex-start",
-    marginTop: -120,
+    marginTop: 40,
   },
   image: {
     position: "relative",
