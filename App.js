@@ -86,22 +86,7 @@ function App() {
         <Image style={styles.image} source={hungry} onClick={addToHunger} />
         <Image style={styles.image} source={happy} onClick={addToHappiness} />
       </View>
-      {/* <View style={styles.buttons}>
 
-
-        <TouchableOpacity onPress={addToHealth} style={styles.button}>
-          <Text style={styles.text}>Sleep</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={addToHealth} style={styles.button}>
-          <Text style={styles.text}>Clean</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={addToHunger}>
-          <Text style={styles.text}>Feed</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={addToHappiness} style={styles.button}>
-          <Text style={styles.text}>Play</Text>
-        </TouchableOpacity>
-      </View> */}
       <View className="avatarContainer" style={styles.avatarContainer}>
         {isBubbleOpen && (
           <View className="speech-bubble">
