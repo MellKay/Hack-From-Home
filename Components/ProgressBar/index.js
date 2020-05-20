@@ -14,7 +14,7 @@ function ProgressBar({ hungerPercentage, happyPercentage, healthPercentage }) {
       <View style={styles.progressbar}>
         <View
           style={{
-            width: healthPercentage * 3.5,
+            width: `${healthPercentage}%`,
             backgroundColor: "#97e5d3",
             height: 20,
             borderRadius: "inherit",
@@ -26,7 +26,7 @@ function ProgressBar({ hungerPercentage, happyPercentage, healthPercentage }) {
       <View style={styles.progressbar}>
         <View
           style={{
-            width: hungerPercentage * 5.8,
+            width: `${hungerPercentage}%`,
             backgroundColor: "#c89dff",
             height: 20,
             borderRadius: "inherit",
@@ -38,7 +38,7 @@ function ProgressBar({ hungerPercentage, happyPercentage, healthPercentage }) {
       <View style={styles.progressbar}>
         <View
           style={{
-            width: happyPercentage * 3.5,
+            width: `${happyPercentage}%`,
             backgroundColor: "#fee45c",
             height: 20,
             borderRadius: "inherit",
@@ -53,10 +53,12 @@ function ProgressBar({ hungerPercentage, happyPercentage, healthPercentage }) {
 const styles = StyleSheet.create({
   progressbar: {
     height: 20,
-    width: 350,
+    width: "80vw",
     borderRadius: 50,
     borderWidth: 1,
     borderColor: "#333",
+    left: 20,
+    marginBottom: 20,
   },
   // filler: {
   //   background: "#1DA598",

@@ -4,7 +4,7 @@ import avatar from "./assets/ani-default.svg";
 import happy from "./assets/happy.png";
 import healthy from "./assets/healthy.png";
 import hungry from "./assets/hungry.png";
-import "./app.css";
+// import "./app.css";
 import NavBar from "./components/NavBar";
 import {
   StyleSheet,
@@ -47,8 +47,8 @@ function App() {
     }
   }
   function addToHunger() {
-    if (hungerPercentage < 60) {
-      setHungerPercentage(hungerPercentage + 20);
+    if (hungerPercentage < 67) {
+      setHungerPercentage(hungerPercentage + 33.3);
       if (healthPercentage < 100) {
         setHealthPercentage(healthPercentage + 20);
       }
@@ -101,7 +101,12 @@ function App() {
             <Text className="p"> {bubbleText} </Text>
           </View>
         )}
-        <Image className="avatar" source={avatar} onClick={addToHappiness} />
+        <Image
+          className="avatar"
+          source={avatar}
+          onClick={addToHappiness}
+          style={styles.avatar}
+        />
       </View>
     </View>
   );
@@ -136,8 +141,8 @@ const styles = StyleSheet.create({
     fontfamily: "Roboto",
   },
   avatar: {
-    maxHeight: 50,
-    maxWidth: 50,
+    height: 100,
+    width: 100,
   },
   avatarContainer: {
     flex: 1,
@@ -151,8 +156,11 @@ const styles = StyleSheet.create({
     marginTop: -120,
   },
   image: {
+    position: "relative",
+    top: -40,
     width: 50,
     height: 50,
+    marginBottom: 10,
   },
 });
 
